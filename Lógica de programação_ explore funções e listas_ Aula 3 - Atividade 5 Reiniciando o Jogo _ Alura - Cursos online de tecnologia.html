@@ -1,0 +1,2745 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620 -->
+<html lang="pt-BR" data-product="alura"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .video-player-dimensions {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .video-player-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+        padding-top: 56.25%;
+      }
+    </style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	
+		
+
+
+
+
+
+
+    
+        
+            
+            <!-- Google Tag Manager -->
+            <script async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/clarity.js.download"></script><script type="text/javascript" async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/j5yix797ro"></script><script async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/OiIKV8DdRsC6DWlZuu25.js.download"></script><script type="text/javascript" async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/23465.js.download"></script><script type="text/javascript" async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/js"></script><script async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/qukryqvi.js.download"></script><script>
+                ;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://stape.alura.com.br/qukryqvi.js?st='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayerAlura','NTLWWLR');
+            </script>
+            <!-- End Google Tag Manager -->
+        
+        
+    
+
+
+    <script>
+        let dataLayerAlura = window.dataLayerAlura || [];
+        dataLayerAlura.push({
+            'event': 'virtual_page_view',
+            'page_category': 'Aula',
+            
+            
+            
+                
+                    
+                    
+                        
+                        'user_id': '7693824',
+                        'plan': 'Corp',
+                        'type': 'B2B',
+                        'company_id':'5157',
+                        'first_purchase_date': '2025-05-26',
+                        'last_purchase_date': '2025-05-26',
+                        'expiration_date': '2100-05-19',
+                        'email': '7e00e74ce2ef5b5fb59bbfb5e2115cbb94bda77eae208b3d082ce27a7e7e8844'
+                    
+                
+            
+        });
+    </script>
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	<title>Lógica de programação: explore funções e listas: Aula 3 - Atividade 5 Reiniciando o Jogo | Alura - Cursos online de tecnologia</title>
+
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+
+	<link href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/video-js.7b9aee00.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/silvermine-videojs-quality-selector.min.de928d55.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/prettify.9c184279.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/github.754087c4.css">
+
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/base.f643e441.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/formattedText.e58775de.css">
+
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/container.ca700c42.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/classPage.35ed9dca.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/menuSettings.f67f102b.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskProgress.80674897.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskMessageInfo.7a825cac.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/alternativeList.49df89b9.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskFeedback.6e3e10b9.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/markdown.3ec31c65.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/finishSection.05b28ac1.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/phrase.b8a0763c.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/openquestion.2889f14f.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/video.9cce2314.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/singlechoice.b545e19f.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/music.8fe6cab6.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/multiplechoice.70f60e4c.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/videodialog.36286910.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/fillintheblank.59273039.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/speakingpractice.13b2c5c5.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/pronunciationpractice.d512f574.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/repetition.492af846.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/genericVideo.4767d8de.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/projectSubmit.ce2f9d80.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/sortBlocks.745c0109.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/maze.7b784acd.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/extraContentTask.b2d126e6.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskContent.1ef47209.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskButtons.ed4fd65b.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/dragAndDrop.31396582.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/startlabProjectSubmit.62da2d1f.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/alert.62c25321.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/markdownEditor.8938d7a8.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/audioPlayer.0a362c88.css">
+	
+	
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/processingVideoTasksAlert.dbc34250.css">
+	<link rel="stylesheet" type="text/css" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/clipper.647d33f8.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/back-to-top.9a8b5967.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/videoShortcutsModal.e1c7fc31.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/modal.5da2b30a.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/modalCoursePreviewMode.fe9f769f.css">
+	
+		<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/monokai-theme-hljs.b874d000.css">
+		<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/chatbot.96929b66.css">
+	
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/checkpointModal.81d064e3.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/modalScratchSelectTeam.ec20bf5a.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/successMessage.cb6c074e.css">
+
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/dark-mode.93e5671c.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/taskFeedbackAnswer.72669c00.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/theater-mode.5995e9f2.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/autoplay-videojs.eefac430.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/linkSubmit.8b21d60b.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/search.f4fa7d71.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/engagementSearch.f7092722.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/engagementMenu.47f6fc67.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/bannerTitleEngagement.f59777ee.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/headerNews.cc911c64.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/header.eb5789a4.css">
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/pointsGraphic.c516058d.css">
+
+	
+	<style type="text/css">
+		.task:before, .video-js .vjs-play-progress {
+			background-color: #2A7AE4;
+		}
+
+
+	</style>
+
+	
+		
+	
+
+	<!-- Remove cookie banner from hubspot -->
+	<style>
+		div#hs-eu-cookie-confirmation {
+			display: none;
+		}
+	</style>
+
+	<script async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hotjar-6490205.js.download"></script><script async="" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/modules.79484904679daf64371c.js.download" charset="utf-8"></script></head>
+
+
+
+
+
+<body class="darkmode theatermode">
+
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+    <header class="menu">
+        
+
+
+
+<section id="headerBusca" class="headerBusca">
+    <div class="container">
+        
+            
+            <a href="https://cursos.alura.com.br/search" aria-label="busca" class="headerBusca-icon headerBusca-icon-mobile --mobile-only" role="button" aria-expanded="false" aria-controls="headerBusca-form">
+                <svg class="headerBusca-icon-svg"><use xlink:href="/assets/images/header/icon-busca.svg#busca"></use></svg>
+            </a>
+            
+                <form action="https://cursos.alura.com.br/chatbot/search" id="luriSearch">
+                    <input type="hidden" name="query" id="headerBusca-campoBusca-chatbot">
+                </form>
+            
+            <form action="https://cursos.alura.com.br/search" id="headerBusca-form" class="headerBusca-form headerBusca-form--retratil">
+                <div class="search-input-wrapper search-move-on-desktop" tabindex="0" autofocus="">
+                    <div class="search-input-with-icon">
+                        
+                        <input type="search" class="skipKeyPress headerBusca-form-input" id="headerBusca-campoBusca" name="query" placeholder="O que você quer aprender?" aria-label="Barra de pesquisa para buscar o termo desejado ">
+                        <div class="search-buttons">
+                            <div class="search-button__border">
+                                
+                                <button class="headerBusca-submit search-and-send-data" aria-label="Realizar a pesquisa do termo digitado " type="submit">
+                                    Pesquisar
+                                </button>
+                            </div>
+                            
+                                <div class="search-button__border border-submit-chatbot">
+                                    
+                                    <button class="headerBusca-submit headerBusca-submit-chatbot search-and-send-data" aria-label="Realizar a pesquisa do termo digitado com o chatbot" type="submit" form="luriSearch">
+                                        <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/search-chatbot-icon.svg" alt="Ícone da Luri">
+                                        Pesquisar com IA
+                                    </button>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+    </div>
+</section>
+
+        <div class="menu__topbar --space-container --mobile-only">
+            <button class="menu__toggle-btn"></button>
+        </div>
+
+        <div class="menu__drawer">
+            <div class="menu__logo --desktop-only header-logo--company">
+                <a href="https://cursos.alura.com.br/dashboard">
+                    <img class="header-logo header-logo-alura logo-alura" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/logo-alura.svg" alt="alura">
+                </a>
+                
+
+
+
+
+
+
+    
+    
+        <span class="company-logo--vertical-separator"></span>
+    
+    <div class="company-logo__wrapper">
+        <div class="company-logo">
+            <img class="company-logo__img" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/5f743114-c9b6-4454-b2f4-62ebb9143d7e.jpg" alt="Logo da empresa - Moraes &amp; Fontes Informática Ltda">
+        </div>
+    </div>
+    
+
+
+            </div>
+
+            <div class="menu__profile --space-container">
+                <div class="menu__news">
+                    <div class="profile__avatar-name profile__alert ">
+                        <img class="profile__avatar" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/cd148fcd5f39224acfd244078c378f43.png" alt="Foto de Gustavo Lima Segatto">
+                        <a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620#" class="profile__edit-avatar"></a>
+                        <p class="profile__info-name --mobile-only">Gustavo</p>
+                        <div class="navigation__item --desktop-only">
+                            <button class="navigation__item-name user-name" aria-controls="profile-menu-desktop" aria-expanded="false">Gustavo</button>
+                            <ul id="profile-menu-desktop" class="navigation__sublist">
+                                
+
+
+
+
+
+                                    <li class="navigation__subitem subitem">
+                                        
+                                            <div class="profile__information">
+                                                <div class="profile__information-avatar">
+                                                    <img class="profile__avatar" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/cd148fcd5f39224acfd244078c378f43.png" alt="Foto de Gustavo Lima Segatto">
+                                                </div>
+                                                <div class="profile__information-score">
+                                                    <span class="menu__score">
+                                                        <h4 class="profile__my-score">Minha pontuação</h4>
+                                                        
+
+
+
+
+
+
+<a href="https://cursos.alura.com.br/points" class="points-link header-profile-pontos" data-username="gsegatto" aria-label="seu total de pontos é 3.8k">
+
+    <div class="levelMenu-header-user-points-xp" aria-hidden="true">
+        <span class="levelMenu-header-user-points-xp-points bootcamp-text-color" data-username="gsegatto">3.8k</span><span class="levelMenu-header-user-points-xp-name">xp</span>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="pointsGrid pointsGrid--small" aria-label="total de pontos por dia">
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 30/07/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 31/07/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 01/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 02/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 03/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 04/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 05/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 06/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 07/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 08/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 09/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 10/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 11/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>600 pontos</strong>
+					
+					
+				
+				em 12/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 13/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>800 pontos</strong>
+					
+					
+				
+				em 14/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>100 pontos</strong>
+					
+					
+				
+				em 15/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 16/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 17/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 18/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 19/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>600 pontos</strong>
+					
+					
+				
+				em 20/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 21/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 22/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 23/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 24/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>200 pontos</strong>
+					
+					
+				
+				em 25/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 26/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 27/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>200 pontos</strong>
+					
+					
+				
+				em 28/08/2025
+			</span>
+		</div>
+	
+</div>
+
+</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        
+                                    </li>
+                                
+
+
+
+
+    
+    
+
+    
+    
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/gsegatto" class="subitem__link">
+        <div class="subitem__icon --mine"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Perfil &amp; Certificados</h4>
+            <p class="subitem__description">Gerencie seu perfil e acompanhe sua evolução</p>
+        </div>
+    </a>
+</li>
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/my_profile" class="subitem__link">
+        <div class="subitem__icon --edit"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Editar meu perfil</h4>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/payments" class="subitem__link">
+        <div class="subitem__icon --purchases"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Minha matrícula</h4>
+            <p class="subitem__description">Nota fiscal e detalhes do seu plano</p>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/signout" class="subitem__link">
+        <div class="subitem__icon --logout"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Sair</h4>
+        </div>
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+
+
+
+
+
+
+
+<button aria-label="novidades" class="header-news-button notification-not-seen" aria-controls="headerNews" aria-expanded="false"></button>
+<div id="headerNews" class="header-news header-nav bootcamp-header-dark-theme" aria-hidden="true" tabindex="-1" data-exists-notification="true">
+    
+
+    
+
+        
+
+            <span class="header-news-text bootcamp-text-color">Novidades</span>
+            <ul class="header-news-list">
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/cases/fashion-rehab-e-o-uso-de-ia-para-apoiar-diagnosticos-de-paralisia-facial-z9785?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/step-cases.svg" alt="Ícone de Fashion Rehab e o uso de IA para apoiar diagnósticos de paralisia facial">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Cases</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Fashion Rehab e o uso de IA para apoiar diagnósticos de paralisia facial</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">4 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/cases/soul-up-e-a-aplicacao-de-blockchain-e-web3-em-um-caso-real-de-impacto-social-e-ambiental-z9781?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/step-cases.svg" alt="Ícone de Soul Up e a aplicação de blockchain e Web3 em um caso real de impacto social e ambiental">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Cases</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Soul Up e a aplicação de blockchain e Web3 em um caso real de impacto social e ambiental</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">4 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/cases/oracle-e-a-jornada-do-madeiro-para-uma-infraestrutura-em-cloud-resiliente-z9782?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/step-cases.svg" alt="Ícone de Oracle e a jornada do Madeiro para uma infraestrutura em cloud resiliente">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Cases</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Oracle e a jornada do Madeiro para uma infraestrutura em cloud resiliente</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">4 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/cases/accenture-e-a-hiperpersonalizacao-no-setor-financeiro-com-ia-generativa-z9788?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/step-cases.svg" alt="Ícone de Accenture e a hiperpersonalização no setor financeiro com IA generativa">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Cases</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Accenture e a hiperpersonalização no setor financeiro com IA generativa</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">4 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/cases/bradesco-e-a-modernizacao-de-sistemas-legados-em-um-cockpit-unificado-z9787?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/step-cases.svg" alt="Ícone de Bradesco e a modernização de sistemas legados em um cockpit unificado">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Cases</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Bradesco e a modernização de sistemas legados em um cockpit unificado</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">5 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+            </ul>
+            <a class="header-news-text news__more" href="https://cursos.alura.com.br/explore" tabindex="-1">Ver todas</a>
+        
+
+        
+
+    
+
+</div>
+                
+                
+                    <span class="menu__score --mobile-only">
+                    <h4 class="profile__my-score">Minha pontuação</h4>
+                    
+
+
+
+
+
+
+<a href="https://cursos.alura.com.br/points" class="points-link header-profile-pontos" data-username="gsegatto" aria-label="seu total de pontos é 3.8k">
+
+    <div class="levelMenu-header-user-points-xp" aria-hidden="true">
+        <span class="levelMenu-header-user-points-xp-points bootcamp-text-color" data-username="gsegatto">3.8k</span><span class="levelMenu-header-user-points-xp-name">xp</span>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="pointsGrid pointsGrid--small" aria-label="total de pontos por dia">
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 30/07/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 31/07/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 01/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 02/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 03/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 04/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 05/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 06/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 07/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 08/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 09/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 10/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 11/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>600 pontos</strong>
+					
+					
+				
+				em 12/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 13/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>800 pontos</strong>
+					
+					
+				
+				em 14/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>100 pontos</strong>
+					
+					
+				
+				em 15/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 16/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 17/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 18/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 19/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>600 pontos</strong>
+					
+					
+				
+				em 20/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 21/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 22/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 23/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 24/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>200 pontos</strong>
+					
+					
+				
+				em 25/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 26/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 27/08/2025
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--low-score">
+			<span class="pointsGrid-cell-details">
+				
+					
+						ganhou <strong>200 pontos</strong>
+					
+					
+				
+				em 28/08/2025
+			</span>
+		</div>
+	
+</div>
+
+</a>
+                
+            </span>
+            </div>
+
+            <div class="menu__navigation">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item --desktop-only">
+                            <a href="https://cursos.alura.com.br/dashboard" class="navigation__item-dashboard">Dashboard</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/dashboard" class="navigation__item-dashboard">Home</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/history" class="navigation__item-dashboard">Meus Cursos e Certificados</a>
+                        </li>
+                        
+                            <li class="navigation__item --mobile-only">
+                                <a href="https://cursos.alura.com.br/learning-guide/engagement" class="navigation__item-dashboard">Formações e Planos de Estudos</a>
+                            </li>
+                        
+                        
+                            <li class="navigation__item --mobile-only">
+                                <a href="https://cursos.alura.com.br/discover" class="navigation__item-dashboard">Descobrir</a>
+                            </li>
+                        
+                        
+
+                        <li class="navigation__item">
+                            <button class="navigation__item-name" aria-controls="community-menu" aria-expanded="false">
+                                Comunidade</button>
+                            <ul id="community-menu" class="navigation__sublist">
+                                
+
+
+
+
+
+    <li class="navigation__subitem subitem">
+        <a href="https://discord.com/oauth2/authorize?client_id=1278070632013238334&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcursos.alura.com.br%2Fdiscord%2Fcallback&amp;scope=email+identify+guilds.join" target="_blank" class="subitem__link">
+            <div class="subitem__icon --discord"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Discord</h4>
+                <p class="subitem__description">Estude com outras pessoas na nossa comunidade no Discord</p>
+            </div>
+        </a>
+    </li>
+
+
+
+    <li class="navigation__subitem subitem">
+        <a href="https://cursos.alura.com.br/forum" class="subitem__link">
+            <div class="subitem__icon --forum"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Fórum</h4>
+                <p class="subitem__description">Interaja, converse e tire dúvidas no nosso fórum</p>
+            </div>
+        </a>
+    </li>
+    <li class="navigation__subitem subitem">
+        <a href="https://cursos.alura.com.br/forum/participacao" class="subitem__link">
+            <div class="subitem__icon --forum-mine"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Minhas interações</h4>
+                <p class="subitem__description">Tópicos que participou no Fórum</p>
+            </div>
+        </a>
+    </li>
+
+
+
+
+
+
+
+    
+
+
+                            </ul>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <button class="navigation__item-name" aria-controls="profile-menu" aria-expanded="false">
+                                Configurações</button>
+                            <ul id="profile-menu" class="navigation__sublist">
+                                
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/gsegatto" class="subitem__link">
+        <div class="subitem__icon --mine"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Perfil &amp; Certificados</h4>
+            <p class="subitem__description">Gerencie seu perfil e acompanhe sua evolução</p>
+        </div>
+    </a>
+</li>
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/my_profile" class="subitem__link">
+        <div class="subitem__icon --edit"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Editar meu perfil</h4>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/payments" class="subitem__link">
+        <div class="subitem__icon --purchases"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Minha matrícula</h4>
+            <p class="subitem__description">Nota fiscal e detalhes do seu plano</p>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/signout" class="subitem__link">
+        <div class="subitem__icon --logout"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Sair</h4>
+        </div>
+    </a>
+</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/menu.011fb43f.js.download"></script>
+
+		
+		
+	
+	<link rel="stylesheet" href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/classPageMenu.dd9b21cd.css">
+
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/avatarOnError.f8bd8956.js.download"></script>
+
+
+	
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://stape.alura.com.br/ns.html?id=GTM-NTLWWLR"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<section class="task class-page-for-VIDEO " data-allow-answer="" data-task-section-exam="false" data-task-type="video" data-task-id="136620" data-author-id="7693824" data-course-code="logica-programacao-funcoes-listas" data-section-name="Reiniciando o jogo" data-section-id="17278" data-section-number="3" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/" data-already-seen-task="false" data-course-name="Lógica de programação: explore funções e listas" data-category-name="Programação" data-subcategory-name="Lógica de programação" data-workload="6" data-teachers="Guilherme Lima,Mônica Mazzochi Hillman" data-is-preview="">
+
+	<section class="task-body">
+		
+
+		
+
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+<header class="task-body-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        <button title="Fechar menu" aria-label="Fechar menu" type="button" class="theatermode openMenu-button task-menu-button " id="menu-button-header">
+        </button>
+    
+    <div class="container">
+        <h1 class="task-body-header-title">
+            
+            
+            <svg class="task-body-header-title-svg" aria-label="Atividade de Vídeo">
+                <use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+            </svg>
+            <small>05</small>
+            <span class="task-body-header-title-text"> Reiniciando o Jogo</span>
+        </h1>
+        
+            <div class="task-body-header-actions">
+                <a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620/next" class="task-actions-button task-actions-button-next task-submit bootcamp-primary-button-theme" style="background-color: #2A7AE4">
+                    
+                        
+                        
+                            Próxima Atividade
+                        
+                    
+                </a>
+            </div>
+        
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+<div class="theater-video settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item">
+					<button data-light-mode="Modo claro" data-dark-mode="Modo noturno" class="light-mode-action --menu-setting darkModeButton settings-box-item-darkmode">
+							Modo claro
+					</button>
+				</li>
+			
+			
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-player">
+							<a class="video-problems" href="https://cursos.alura.com.br/video/diagnostic?taskId=136620" target="_blank">
+								Problemas com o vídeo?
+								<span hidden="">indisponível</span>
+							</a>
+						</li>
+						<li class="settings-box-item settings-box-item-shortcuts">
+							<button class="shortcuts-action">
+								Atalhos de teclado
+							</button>
+						</li>
+					
+					
+						
+							
+							
+								<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/logica-programacao-funcoes-listas/136620/question">Sugerir alteração</a></li>
+							
+						
+					
+				
+				
+			
+			
+		</ul>
+		<span class="settings-box-title"></span>
+	</div>
+</div>
+
+        
+    </div>
+</header>
+
+		
+
+		<div class="task-body__wrapper">
+			<main class="task-body-main container" data-should-warn="false">
+				
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+		
+
+
+
+
+
+
+
+
+
+    
+    
+        <section class="video" id="task-content">
+            <div class="container theater-mode">
+                
+
+
+
+
+
+
+
+
+
+
+<div class="video settings">
+	<button type="button" class="settings-button" aria-label="Configurações">
+		<svg class="settings-button-icon">
+			<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MENU_SETTINGS"></use>
+		</svg>
+	</button>
+	<div class="settings-box">
+		<ul class="settings-box-list">
+			
+				<li class="settings-box-item">
+					<button data-light-mode="Modo claro" data-dark-mode="Modo noturno" class="light-mode-action --menu-setting darkModeButton settings-box-item-darkmode">
+							Modo claro
+					</button>
+				</li>
+			
+			
+				
+				
+				
+					
+						<li class="settings-box-item settings-box-item-player">
+							<a class="video-problems" href="https://cursos.alura.com.br/video/diagnostic?taskId=136620" target="_blank">
+								Problemas com o vídeo?
+								<span hidden="">indisponível</span>
+							</a>
+						</li>
+						<li class="settings-box-item settings-box-item-shortcuts">
+							<button class="shortcuts-action">
+								Atalhos de teclado
+							</button>
+						</li>
+					
+					
+						
+							
+							
+								<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/logica-programacao-funcoes-listas/136620/question">Sugerir alteração</a></li>
+							
+						
+					
+				
+				
+			
+			
+		</ul>
+		<span class="settings-box-title"></span>
+	</div>
+</div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="video" class="video-container">
+    <div id="video-container-data" data-max-playback-rate="" data-section-id="17278" data-course="logica-programacao-funcoes-listas" data-playback-rate="1.5" data-task-id="136620" data-quality="hd" data-course-id="3271" data-autoplay-type="" data-autoplay-enabled="false" data-gnarus-name="alura" data-error-message="&lt;p&gt;Não foi possível reproduzir o vídeo. Para ter um diagnóstico mais detalhado entre na &lt;a href=&quot;/video/diagnostic?taskId=136620&quot;&gt;página de diagnóstico de video&lt;/a&gt;&lt;/p&gt;" data-error-label="Não foi possível reproduzir o vídeo. Para ter um diagnóstico mais detalhado entre em /video/diagnostic?taskId=136620 diagnóstico de video">
+
+        
+    
+          <video-js id="video-player" class="video-js vjs-big-play-centered vjs-default-skin video-player-frame video-player vjs-fluid video-player-dimensions vjs-controls-enabled vjs-workinghover vjs-v8 vjs-has-started vjs-playing vjs-user-active" oncontextmenu="return false;" preload="auto" controlslist="nodownload" tabindex="-1" role="region" lang="pt-br" translate="no" aria-label="Video Player"><video tabindex="-1" role="application" controlslist="nodownload" preload="auto" oncontextmenu="return false;" class="vjs-tech" id="video-player_html5_api" src="https://gnarus-video.4986a99d4a6ebf7ab87ee6461d95b58b.r2.cloudflarestorage.com/alura/853215018-hd.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20250828T173042Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Credential=099e678757b68a07f650f27240529bce%2F20250828%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Expires=7200&amp;X-Amz-Signature=e92654b8aed4d87a200573bceceb8fb90d4e2817a5d3f817c1d5964f0cde4d6e"></video>
+           <div class="vjs-poster vjs-hidden" aria-disabled="false"></div><div class="vjs-title-bar vjs-hidden"><div class="vjs-title-bar-title" id="vjs-title-bar-title-91"></div><div class="vjs-title-bar-description" id="vjs-title-bar-description-92"></div></div><div class="vjs-text-track-display" translate="yes" aria-live="off" aria-atomic="true" style="inset-inline: 152px;"><div style="position: absolute; inset: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="21.88" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-valuetext="1:18 of 5:56"><div class="vjs-load-progress" style="width: 32.47%;"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">32.47%</span></span><div data-start="0" data-end="115.856" style="left: 0%; width: 100%;"></div></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 21.88%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: -13px;">1:18</div></div></div></div><button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Pause" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Pause</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-2" type="button" title="Mute" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="63%"><div class="vjs-mouse-display"><div class="vjs-volume-tooltip" aria-hidden="true"></div></div><div class="vjs-volume-level" style="width: 63.41%;"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" role="presentation">1:18</span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" role="presentation">5:56</span></div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><div class="vjs-playback-rate-value" id="vjs-playback-rate-value-label-video-player_component_295">1.5x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false" aria-describedby="vjs-playback-rate-value-label-video-player_component_295"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">3x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">2x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">1.5x</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1.25x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">1x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.75x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.5x</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">0.25x</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Subtitles" aria-haspopup="true" aria-expanded="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Subtitles</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">subtitles off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item vjs-subtitles-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">Português (Brasil)</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><div class="vjs-quality-selector vjs-menu-button vjs-menu-button-popup vjs-control vjs-button"><button class="vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" aria-haspopup="true" aria-expanded="false" title="Open quality selector menu"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Open quality selector menu</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">fullhd</span><span class="vjs-control-text" aria-live="polite"></span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="true"><span class="vjs-menu-item-text">hd</span><span class="vjs-control-text" aria-live="polite">, selected</span></li><li class="vjs-menu-item" tabindex="-1" role="menuitemradio" aria-disabled="false" aria-checked="false"><span class="vjs-menu-item-text">sd</span><span class="vjs-control-text" aria-live="polite"></span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button" title="Picture-in-Picture" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-control vjs-button theater-mode-player-icon close" type="button" aria-disabled="false" title="Close Theater Mode"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Close Theater Mode</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="video-player_component_565_description" aria-hidden="true" aria-label="Modal Window" role="dialog" aria-live="polite"><p class="vjs-modal-dialog-description vjs-control-text" id="video-player_component_565_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" tabindex="-1" aria-describedby="video-player_component_571_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog" aria-live="polite"><p class="vjs-modal-dialog-description vjs-control-text" id="video-player_component_571_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg vjs-track-setting"><legend id="captions-text-legend-video-player_component_571">Text</legend><span class="vjs-text-color"><label id="captions-foreground-color-video-player_component_571" class="vjs-label" for="vjs_select_598">Color</label><select id="vjs_select_598" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571"><option id="captions-foreground-color-video-player_component_571-White" value="#FFF" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-White">White</option><option id="captions-foreground-color-video-player_component_571-Black" value="#000" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Black">Black</option><option id="captions-foreground-color-video-player_component_571-Red" value="#F00" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Red">Red</option><option id="captions-foreground-color-video-player_component_571-Green" value="#0F0" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Green">Green</option><option id="captions-foreground-color-video-player_component_571-Blue" value="#00F" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Blue">Blue</option><option id="captions-foreground-color-video-player_component_571-Yellow" value="#FF0" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Yellow">Yellow</option><option id="captions-foreground-color-video-player_component_571-Magenta" value="#F0F" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Magenta">Magenta</option><option id="captions-foreground-color-video-player_component_571-Cyan" value="#0FF" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-color-video-player_component_571 captions-foreground-color-video-player_component_571-Cyan">Cyan</option></select></span><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-video-player_component_571" class="vjs-label" for="vjs_select_603">Opacity</label><select id="vjs_select_603" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-opacity-video-player_component_571"><option id="captions-foreground-opacity-video-player_component_571-Opaque" value="1" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-opacity-video-player_component_571 captions-foreground-opacity-video-player_component_571-Opaque">Opaque</option><option id="captions-foreground-opacity-video-player_component_571-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-video-player_component_571 captions-foreground-opacity-video-player_component_571 captions-foreground-opacity-video-player_component_571-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg vjs-track-setting"><legend id="captions-background-video-player_component_571">Text Background</legend><span class="vjs-bg-color"><label id="captions-background-color-video-player_component_571" class="vjs-label" for="vjs_select_613">Color</label><select id="vjs_select_613" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571"><option id="captions-background-color-video-player_component_571-Black" value="#000" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Black">Black</option><option id="captions-background-color-video-player_component_571-White" value="#FFF" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-White">White</option><option id="captions-background-color-video-player_component_571-Red" value="#F00" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Red">Red</option><option id="captions-background-color-video-player_component_571-Green" value="#0F0" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Green">Green</option><option id="captions-background-color-video-player_component_571-Blue" value="#00F" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Blue">Blue</option><option id="captions-background-color-video-player_component_571-Yellow" value="#FF0" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Yellow">Yellow</option><option id="captions-background-color-video-player_component_571-Magenta" value="#F0F" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Magenta">Magenta</option><option id="captions-background-color-video-player_component_571-Cyan" value="#0FF" aria-labelledby="captions-background-video-player_component_571 captions-background-color-video-player_component_571 captions-background-color-video-player_component_571-Cyan">Cyan</option></select></span><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-video-player_component_571" class="vjs-label" for="vjs_select_618">Opacity</label><select id="vjs_select_618" aria-labelledby="captions-background-video-player_component_571 captions-background-opacity-video-player_component_571"><option id="captions-background-opacity-video-player_component_571-Opaque" value="1" aria-labelledby="captions-background-video-player_component_571 captions-background-opacity-video-player_component_571 captions-background-opacity-video-player_component_571-Opaque">Opaque</option><option id="captions-background-opacity-video-player_component_571-SemiTransparent" value="0.5" aria-labelledby="captions-background-video-player_component_571 captions-background-opacity-video-player_component_571 captions-background-opacity-video-player_component_571-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-video-player_component_571-Transparent" value="0" aria-labelledby="captions-background-video-player_component_571 captions-background-opacity-video-player_component_571 captions-background-opacity-video-player_component_571-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window vjs-track-setting"><legend id="captions-window-video-player_component_571">Caption Area Background</legend><span class="vjs-window-color"><label id="captions-window-color-video-player_component_571" class="vjs-label" for="vjs_select_628">Color</label><select id="vjs_select_628" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571"><option id="captions-window-color-video-player_component_571-Black" value="#000" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Black">Black</option><option id="captions-window-color-video-player_component_571-White" value="#FFF" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-White">White</option><option id="captions-window-color-video-player_component_571-Red" value="#F00" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Red">Red</option><option id="captions-window-color-video-player_component_571-Green" value="#0F0" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Green">Green</option><option id="captions-window-color-video-player_component_571-Blue" value="#00F" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Blue">Blue</option><option id="captions-window-color-video-player_component_571-Yellow" value="#FF0" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Yellow">Yellow</option><option id="captions-window-color-video-player_component_571-Magenta" value="#F0F" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Magenta">Magenta</option><option id="captions-window-color-video-player_component_571-Cyan" value="#0FF" aria-labelledby="captions-window-video-player_component_571 captions-window-color-video-player_component_571 captions-window-color-video-player_component_571-Cyan">Cyan</option></select></span><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-video-player_component_571" class="vjs-label" for="vjs_select_633">Opacity</label><select id="vjs_select_633" aria-labelledby="captions-window-video-player_component_571 captions-window-opacity-video-player_component_571"><option id="captions-window-opacity-video-player_component_571-Transparent" value="0" aria-labelledby="captions-window-video-player_component_571 captions-window-opacity-video-player_component_571 captions-window-opacity-video-player_component_571-Transparent">Transparent</option><option id="captions-window-opacity-video-player_component_571-SemiTransparent" value="0.5" aria-labelledby="captions-window-video-player_component_571 captions-window-opacity-video-player_component_571 captions-window-opacity-video-player_component_571-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-video-player_component_571-Opaque" value="1" aria-labelledby="captions-window-video-player_component_571 captions-window-opacity-video-player_component_571 captions-window-opacity-video-player_component_571-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-video-player_component_571">Font Size</legend><select id="vjs_select_648" aria-labelledby="captions-font-size-video-player_component_571"><option id="vjs-track-option-649-50" value="0.50" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-649-50">50%</option><option id="vjs-track-option-650-75" value="0.75" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-650-75">75%</option><option id="vjs-track-option-651-100" value="1.00" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-651-100">100%</option><option id="vjs-track-option-652-125" value="1.25" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-652-125">125%</option><option id="vjs-track-option-653-150" value="1.50" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-653-150">150%</option><option id="vjs-track-option-654-175" value="1.75" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-654-175">175%</option><option id="vjs-track-option-655-200" value="2.00" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-655-200">200%</option><option id="vjs-track-option-656-300" value="3.00" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-656-300">300%</option><option id="vjs-track-option-657-400" value="4.00" aria-labelledby="captions-font-size-video-player_component_571 vjs-track-option-657-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="captions-edge-style-video-player_component_571">Text Edge Style</legend><select id="vjs_select_667" aria-labelledby="captions-edge-style-video-player_component_571"><option id="vjs-track-option-668-None" value="none" aria-labelledby="captions-edge-style-video-player_component_571 vjs-track-option-668-None">None</option><option id="vjs-track-option-669-Raised" value="raised" aria-labelledby="captions-edge-style-video-player_component_571 vjs-track-option-669-Raised">Raised</option><option id="vjs-track-option-670-Depressed" value="depressed" aria-labelledby="captions-edge-style-video-player_component_571 vjs-track-option-670-Depressed">Depressed</option><option id="vjs-track-option-671-Uniform" value="uniform" aria-labelledby="captions-edge-style-video-player_component_571 vjs-track-option-671-Uniform">Uniform</option><option id="vjs-track-option-672-Dropshadow" value="dropshadow" aria-labelledby="captions-edge-style-video-player_component_571 vjs-track-option-672-Dropshadow">Drop shadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-video-player_component_571">Font Family</legend><select id="vjs_select_682" aria-labelledby="captions-font-family-video-player_component_571"><option id="vjs-track-option-683-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-683-ProportionalSansSerif">Proportional Sans-Serif</option><option id="vjs-track-option-684-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-684-MonospaceSansSerif">Monospace Sans-Serif</option><option id="vjs-track-option-685-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-685-ProportionalSerif">Proportional Serif</option><option id="vjs-track-option-686-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-686-MonospaceSerif">Monospace Serif</option><option id="vjs-track-option-687-Casual" value="casual" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-687-Casual">Casual</option><option id="vjs-track-option-688-Script" value="script" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-688-Script">Script</option><option id="vjs-track-option-689-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-video-player_component_571 vjs-track-option-689-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button class="vjs-default-button" type="button" title="restore all settings to the default values" aria-disabled="false">Reset</button><button class="vjs-done-button" type="button" title="restore all settings to the default values" aria-disabled="false">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" title="Close Modal Dialog" aria-disabled="false"><span class="vjs-icon-placeholder" aria-hidden="true"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div></video-js>
+        </div>
+</section>
+                
+
+
+
+
+
+
+
+
+    <section id="chatbot-suggested-messages-transcription" class="chatbot-suggested-messages-spotlight">
+        <div class="chatbot-suggested-messages-transcription__container">
+            <div class="chatbot-suggested-messages-transcription__icon-helper">
+                <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Ícone da Luri" class="chatbot-suggested-messages-transcription__icon">
+                <p>Oi, eu sou Luri :) Estou aqui para te ajudar caso tenha alguma dúvida no conteúdo da aula.</p>
+            </div>
+            <div class="chatbot-suggested-messages-transcription__messages">
+                
+                    <button class="suggestedMessage">Descreva a aula usando analogias</button>
+                
+                    <button class="suggestedMessage">Resuma o conteúdo dessa aula</button>
+                
+                    <button class="suggestedMessage">De que forma posso analisar se apliquei os conceitos da aula corretamente?</button>
+                
+            </div>
+        </div>
+    </section>
+
+
+                
+                    <section id="transcription" class="video-transcription video-transcription--inactive transcription-toggle">
+                        
+                            <h2 class="video-transcription-title">Transcrição</h2>
+                        
+                        <div class="formattedText" data-external-links="">
+                                <p><strong>Guilherme:</strong> Agora definiremos uma funcionalidade para o botão "Novo Jogo". Ao clicá-lo, queremos que as tentativas sejam zeradas e um novo número seja sorteado.</p>
+<p><strong>Mônica:</strong> Como queremos que isso seja iniciado com um clique, então usaremos o <code>onClick</code>.</p>
+<h1>Definindo a funcionalidade do botão Novo Jogo</h1>
+<blockquote>
+<p><code>index.html</code></p>
+</blockquote>
+<p><strong>Guilherme:</strong> Se acessarmos o HTML, na linha 28 temos um <code>onclick</code> vazio. Após o sinal de igual, dentro de aspas duplas, criamos uma função chamada <code>reiniciarJogo()</code>.</p>
+<blockquote>
+<p>Lembrando que precisamos usar os parênteses para indicar que é uma função.</p>
+</blockquote>
+<pre class="prettyprint"><code class="hljs language-javascript"><span class="hljs-comment">//Código omitido</span>
+
+<span class="hljs-keyword">class</span>=<span class="hljs-string">"container_input"</span>&gt;
+<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"chute container_botoes"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"verificarChute()"</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"container botao"</span>&gt;</span>Chutar<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"reiniciarJogo()"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"reiniciar"</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"container_botao"</span> <span class="hljs-attr">disabled</span>&gt;</span>Novo jogo&lt;/
+    button&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<blockquote>
+<p><code>app.js</code></p>
+</blockquote>
+<p>Feito isso, voltamos no <code>app.js</code>. No fim do código, na linha 41, criamos a função <code>reiniciarJogo()</code>, que não receberá nenhum parâmetro. </p>
+<blockquote>
+<p>Vamos executar essa função quando o botão for clicado, diferente de como geralmente usamos funções no JavaScript, aqui não invocamos a função. </p>
+</blockquote>
+<p>Ao iniciar o jogo queremos que um novo número secreto seja sorteado. Então, adicionamos chaves e dentro passamos <code>numeroSecreto</code> igual à <code>gerarNumeroAleatorio()</code>.</p>
+<p><strong>Mônica:</strong> Em seguida, precisamos que o campo fique vazio e que as tentativas sejam iniciadas como 1. </p>
+<p><strong>Guilherme:</strong> Isso mesmo! Então, passamos <code>limparCampo()</code> e na linha abaixo <code>tentativas = 1</code>.</p>
+<pre class="prettyprint"><code class="hljs language-csharp"><span class="hljs-comment">//Código omitido</span>
+
+<span class="hljs-function">function <span class="hljs-title">reiniciarJogo</span>()</span> {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = <span class="hljs-number">1</span>;
+}
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<p><strong>Guilherme:</strong> Vamos testar. Primeiro precisamos acertar o número secreto, então digitamos "5".</p>
+<p>Depois, clicamos no botão "Novo jogo". Um novo número é sorteado, mas temos um problema, a mensagem "Acertou" e "Você descobriu o número secreto em 1 tentativa" continuam aparecendo. Precisamos mudar isso.</p>
+<p>Para facilitar, copiamos as linhas 9 e 10, referente as funções <code>exibirTextoNaTela()</code> e colamos na linha 45. Agora, faremos as alterações necessárias. </p>
+<p>Vamos testar de novo. Ao acertar o número secreto clicamos em "Novo jogo" e a mensagem muda para "Jogo do número secreto. Escolha um número entre 1 e 10". </p>
+<p><strong>Mônica:</strong> Deu certo! Está funcionando, mas há código repetido e isso não é uma boa prática.</p>
+<p><strong>Guilherme:</strong> Verdade, Môni! Suponhamos que o jogo foi atualizado para a versão 2.0. Nesse caso, se na linha 9, mudarmos o texto para "Jogo do número secreto 2.0" quando rodarmos o jogo pela segunda vez, essa mensagem não será exibida.</p>
+<p>Fazer essa alteração nos dois trechos de código não é uma boa prática. Sendo assim, precisamos isolar esse comportamento em uma função.</p>
+<p>Na linha 9, criamos a função <code>exibirMensagemInicial()</code>. A única responsabilidade dessa função será exibir as mensagens iniciais.</p>
+<p>Então, colamos as duas funções <code>exbirNaTela()</code> e colamos logo abaixo.</p>
+<pre class="prettyprint"><code class="hljs language-csharp"><span class="hljs-function">function <span class="hljs-title">exibirMensagemInicial</span>()</span> { 
+    exibirTextoNaTela(<span class="hljs-string">'h1'</span>, <span class="hljs-string">'Jogo do número secreto'</span>); 
+    exibirTextoNaTela(<span class="hljs-string">'p'</span>, <span class="hljs-string">'Escolha um número entre 1 e 10'</span>); I
+}
+
+<span class="hljs-comment">//Código omitido</span>
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<p><strong>Guilherme:</strong> Agora, precisamos colocar essa mensagem inicial na função <code>reiniciarJogo()</code>. Para isso, apagamos as linhas 48 e 49. No lugar, passamos a função <code>exibirMensagemInicial()</code>.</p>
+<pre class="prettyprint"><code class="hljs language-csharp"><span class="hljs-comment">//Código omitido</span>
+
+<span class="hljs-function">function <span class="hljs-title">reiniciarJogo</span>()</span> {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = <span class="hljs-number">1</span>;
+    exibirMensagemInicial()
+}
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<p><strong>Mônica:</strong> Em seguida, precisamos chamar a nova função fora de qualquer outra função para ser iniciada na primeira vez que o  <code>app.js</code> for lido. </p>
+<p><strong>Guilherme:</strong> Exatamente! Então, na linha 14, escrevemos <code>exibirMensagemInicial()</code>. Lembrando que poderia ser em outra linha.</p>
+<pre class="prettyprint"><code class="hljs language-scss">function <span class="hljs-built_in">exibirMensagemInicial</span>() { 
+    <span class="hljs-built_in">exibirTextoNaTela</span>('h1', 'Jogo do número secreto'); 
+    <span class="hljs-built_in">exibirTextoNaTela</span>('p', 'Escolha um número entre <span class="hljs-number">1</span> e <span class="hljs-number">10</span>'); <span class="hljs-selector-tag">I</span>
+}
+
+<span class="hljs-built_in">exibirMensagemInicial</span>()
+
+<span class="hljs-comment">//Código omitido</span>
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<p><strong>Guilherme:</strong> Vamos testar. Chutamos até acertar. Depois, clicamos em "Novo Jogo" e ele é iniciado. Deu certo!</p>
+<p>Porém, repare que ainda temos um problema. Sempre que clicamos em "Novo Jogo", ele traz um novo jogo. Seria interessante se pudéssemos restaurar o status da nossa aplicação o campo desabilitado. Faremos isso. </p>
+<p>No fim do código, na função <code>reiniciarJogo()</code> passamos <code>document.getElementById()</code>. Nos parênteses adicionamos aspas simples e escrevemos <code>reiniciar</code> seguido do atributo <code>.setAttribute()</code>.</p>
+<p>Dentro dos parênteses, passamos o nome do atributo que queremos setar, então <code>'disabled'</code>. Adicionamos vírgula e passamos o segundo parâmetro <code>true</code>. </p>
+<pre class="prettyprint"><code class="hljs language-javascript"><span class="hljs-comment">//Código omitido</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">reiniciarJogo</span>(<span class="hljs-params"></span>) {
+    numeroSecreto = <span class="hljs-title function_">gerarNumeroAleatorio</span>();
+    <span class="hljs-title function_">limparCampo</span>();
+    tentativas =<span class="hljs-number">1</span>;
+    <span class="hljs-title function_">exibirMensagemInicial</span>();
+    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">'reiniciar'</span>).<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">'disabled'</span>, <span class="hljs-literal">true</span>)
+}
+</code><button type="button" class="clipit">Copiar código</button></pre>
+<p>Voltamos no jogo. Repare que começamos com o botão "Novo Jogo" desabilitado. Após acertar o número da sorte ele é habilitado. Ao clicá-lo ele desabilita novamente.</p>
+<p><strong>Mônica:</strong> Deu tudo certo!</p>
+                        </div>
+                    </section>
+                    
+                        <button class="video-transcription-button transcription-toggle" aria-hidden="true">
+                            <span class="video-transcription-button-text">
+                                    continuar lendo</span>
+                        </button>
+                    
+                
+            </div>
+        </section>
+    
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+				
+					
+
+
+
+
+
+
+
+	
+	
+		
+
+		<section class="task-actions">
+			<div class="container">
+				
+
+
+
+
+
+
+    
+        
+        <a href="https://cursos.alura.com.br/forum/curso-logica-programacao-funcoes-listas/exercicio-reiniciando-o-jogo/136620/novo" class=" task-actions-button task-actions-button-forum bootcamp-secondary-button-theme" target="_blank">
+            
+                
+                
+                    Discutir no Fórum
+                
+            
+        </a>
+    
+
+
+
+				
+				
+				
+				
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620/next" style="background-color: #2A7AE4" class="task-actions-button task-body-actions-button task-actions-button-next bootcamp-next-button bootcamp-primary-button-theme">
+						
+							
+							
+								Próxima Atividade
+							
+						
+					</a>
+				
+			</div>
+		</section>
+	
+
+
+				
+				
+					
+
+
+
+
+<div class="modalContainer">
+    <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-content">
+            <section class="modal-content-header">
+                <h4 class="modal-content-header-title">Atalhos de teclado</h4>
+                <button type="button" class="modal-content-header-close" aria-label="Fechar modal"></button>
+            </section>
+            <section class="modal-body">
+                <div class="normal-shortcut-keys">
+                    <table class="dashboard-table bootcamp-text-color-gray shortcut-table">
+                        <tbody>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/k-key.svg" alt="Letra k do teclado"> </td>
+                            <td>Tocar/Pausar o vídeo</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/m-key.svg" alt="Letra m do teclado"></td>
+                            <td>Mutar/Desmutar o vídeo</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/f-key.svg" alt="Letra f do teclado"></td>
+                            <td>Ativar/Desativar a tela cheia (full screen)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/left-key.svg" alt="Seta para a esquerda"></td>
+                            <td>Voltar 10 segundos a reprodução do vídeo</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/right-key.svg" alt="Seta para a direita"></td>
+                            <td>Avançar 10 segundos a reprodução do vídeo</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/up-key.svg" alt="Seta para cima"></td>
+                            <td>Aumentar o volume em 5%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/down-key.svg" alt="Seta para baixo"></td>
+                            <td>Diminuir o volume em 5%</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/space-key.svg" alt="Tecla espaço"></td>
+                            <td>Toca/Pausa o vídeo quando nenhum botão estiver em foco (selecionado).</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/space-key.svg" alt="Tecla espaço"></td>
+                            <td>Ativar/Desativar a função do botão que estiver em foco.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="function-shortcut-keys">
+                    <table class="dashboard-table bootcamp-text-color-gray shortcut-table">
+                        <caption class="shortcuts-keys-title">Teclas de função</caption>
+                        <tbody>
+                            <tr>
+                                <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/play-key.svg" alt="Tecla multimídia Play"></td>
+                                <td>Tocar o vídeo</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/pause-key.svg" alt="Tecla multimídia Pause"></td>
+                                <td>Pausar o vídeo</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/stop-key.svg" alt="Tecla multimídia Stop"></td>
+                                <td>Parar o vídeo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+				
+			</main>
+			
+				
+
+
+
+
+<section class="chatbot-suggestion-by-selection-section">
+    <div class="chatbot-suggestion-by-selection-container chatbot-suggestion-section-active-menu">
+        <div class="chatbot-suggestion-by-selection-icon-helper">
+            <img class="chatbot-icon-selection-tooltip" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Luri">
+            <p class="chatbot-selection-label">Ajuda da Luri ✨</p>
+        </div>
+        
+            <button class="chatbot-suggestion-by-selection-button" value="Me dê um exemplo">
+                Me dê um exemplo
+            </button>
+        
+            <button class="chatbot-suggestion-by-selection-button" value="Me explique utilizando uma analogia">
+                Me explique utilizando uma analogia
+            </button>
+        
+            <button class="chatbot-suggestion-by-selection-button" value="Me explique de outra forma">
+                Me explique de outra forma
+            </button>
+        
+    </div>
+</section>
+
+			
+		</div>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu task-menu-iframe" style="position: fixed;">
+	<section class="task-menu-header">
+			<a class="task-menu__return-to-course" href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas" title="Ir para página do curso">
+		</a><div class="task-menu-header-info"><a class="task-menu__return-to-course" href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas" title="Ir para página do curso">
+			</a><a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas" title="Ir para página do curso">
+				
+					
+					
+					
+						<img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/logica-programacao-funcoes-listas.svg" alt="ícone Lógica de programação: explore funções e listas" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+					
+				
+				<h2 class="task-menu-header-info-title-text">Lógica de programação: explore funções e listas</h2>
+			</a>
+			
+				<div class="task-menu-header-info-progress">
+					
+					<span class="task-menu-header-info-progress-percentage ">47%</span>
+					
+						
+						
+							
+						
+					
+					<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 47%, transparent 47%);"></span>
+				</div>
+			
+		</div>
+	</section>
+	
+		<form class="task-menu-header-search" target="_blank" action="https://cursos.alura.com.br/search/course/logica-programacao-funcoes-listas" method="get">
+			<label class="task-menu-header-search-title" for="query">Buscar neste curso</label>
+			<input class="task-menu-header-search-input" name="query" id="query" type="text" required="">
+			<button class="task-menu-header-search-button">Pesquisar <img aria-hidden="true" class="task-menu-header-search-button-img" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/icon-new-page.svg"></button>
+		</form>
+	
+	
+	<section class="task-menu-section sr-only">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>03</strong>
+				<span>de 05</span>
+			</span>
+			<h3 class="task-menu-section-title-text">
+				Reiniciando o jogo
+			</h3>
+		</div>
+	</section>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aula Atual
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/logica-programacao-funcoes-listas/section/&#39;+this.value+&#39;/tasks&#39;;">
+			
+				<option value="17276">01. Interagindo com HTML</option>
+			
+				<option value="17277">02. Funções</option>
+			
+				<option value="17278" selected="">03. Reiniciando o jogo</option>
+			
+				<option value="17279">04. Listas</option>
+			
+				<option value="17280">05. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			
+				
+				
+					Atividades
+				
+			
+			<span>5 de 8</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/137222" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto da aula anterior">
+							Projeto da aula anterior
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136617" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Verificando o chute">
+							Verificando o chute
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136618" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Contando tentativas">
+							Contando tentativas
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136619" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Botão reiniciar">
+							Botão reiniciar
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">07min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+						
+						
+					<svg class="task-menu-nav-item-svg  task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Reiniciando o Jogo">
+							Reiniciando o Jogo
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/137223" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Múltipla escolha não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Calculadora de Média e Situação do Aluno">
+							Calculadora de Média e Situação do Aluno
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/137224" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Sem Resposta do Aluno não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#CHALLENGE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Desafio: hora da prática">
+							Desafio: hora da prática
+						</span>
+						
+					</span></a>
+				</li>
+			
+				
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/137225" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+						
+						
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+						<use xlink:href="/assets/images/classPage/icon-menu-icons.svg#WHAT_WE_LEARNED"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O que aprendemos?">
+							O que aprendemos?
+						</span>
+						
+					</span></a>
+				</li>
+			
+			
+		</ul>
+
+		
+
+		
+			
+			
+				<section class="task-menu-others" style="padding-bottom: 3rem;">
+					
+						
+						<a href="https://cursos.alura.com.br/forum/curso-logica-programacao-funcoes-listas/todos" class="task-menu-others-link task-menu-others-link-forum" title="Ir para o fórum do curso" target="_blank">
+							
+								
+								
+									Fórum do curso
+								
+							
+						</a>
+					
+				</section>
+			
+		
+	</nav>
+
+</aside>
+
+
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<aside id="chatbot" class="chatbot-resizable animate" style="z-index: 200">
+    <div class="chatbot-cta ">
+        <div class="chatbot-tooltip">E aí, precisa de ajuda?</div>
+        <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/luri-icon-cta.svg" class="chatbot-cta-image" aria-label="Abrir chat com a Luri" tabindex="0" role="button">
+    </div>
+
+    <div class="chatbot-header">
+        
+        
+            <div class="chatbot-header__icon">
+                <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Ícone da Luri">
+            </div>
+            <div class="chatbot-header__about">
+                <div class="chatbot-header__about_row">
+                    <div class="chatbot-header__about-name">Luri</div>
+                </div>
+            </div>
+        
+        <div class="chatbot-header_buttons_wrapper">
+            <button class="chatbot-header__expand-collapse_button">
+                <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/vector-expand.svg" alt="Expadir">
+            </button>
+            <button class="chatbot-header__close" aria-label="Fechar chat da Luri">
+                <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/close.svg" alt="Fechar">
+            </button>
+        </div>
+
+    </div>
+
+    <div class="suggestion-main-container">
+        <div class="suggestion-luri-presentation">
+            <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Ícone da Luri">
+            <p>Oi, eu sou Luri :) Estou aqui para te ajudar caso tenha alguma dúvida no conteúdo da aula.</p>
+        </div>
+        <div class="chatbot-footer__questions">
+            
+                <button class="chatbot-footer__questions-item">Como posso analisar se apliquei os conceitos da aula corretamente?</button>
+            
+                <button class="chatbot-footer__questions-item">Explique a aula usando analogias</button>
+            
+                <button class="chatbot-footer__questions-item">Faça um resumo dessa aula</button>
+            
+        </div>
+    </div>
+
+    <div class="chatbot-body style-scroll"></div>
+    <div class="spotlight-large"></div>
+
+    <div class="chatbot-footer">
+        <div class="chatbot-footer__actions">
+            <button class="chatbot-footer__actions-btn chatbot-footer__actions-clean-conversation">Limpar conversa</button>
+        </div>
+        <form>
+            
+                
+                
+                    <div class="chatbot-footer__send-area">
+                        <div class="chatbot-footer__send-area-input">
+                            <div class="chatbot-footer__send-area-input-area">
+                                <textarea id="textArea" class="chatbot-footer__send-area-content style-scroll" rows="1" placeholder="Escreva sua mensagem..."></textarea>
+                            </div>
+                        </div>
+                        <button class="chatbot-footer__send-area-btn">
+                            <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/icon-send.svg" alt="Enviar">
+                        </button>
+                    </div>
+                
+            
+
+        </form>
+        <div class="chatbot-footer__messages">
+            <div class="chatbot-footer__feedback">
+                <a href="https://suporte.alura.com.br/support/solutions/articles/153000180108-conheca-a-luri-nossa-intelig%C3%AAncia-artificial" target="_blank">FAQ</a>
+                <img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ellipse.png">
+                <a href="https://tally.so/r/waeWvB" target="_blank">Enviar feedback</a>
+            </div>
+            <a href="https://cursos.alura.com.br/chatbot/conversations?courseCode=logica-programacao-funcoes-listas">
+                Histórico de conversas
+            </a>
+        </div>
+
+    </div>
+
+    <div class="chatbot-resizer"></div>
+</aside>
+    
+
+</section><div class="full-screen__panel" style="display: none;">
+				<img id="full-screen__image" class="full-screen__image" src="https://cursos.alura.com.br/course/logica-programacao-funcoes-listas/task/136620" alt="">
+				<div class="full-screen__actions">
+				<button class="button buttonAction partitura-download">Anterior</button><button class="button buttonAction partitura-download">Sair</button><button class="button buttonAction partitura-download">Próximo</button></div> 
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+	
+	<!-- Hotjar Tracking Code for https://cursos.alura.com.br -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:6490205,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+
+	
+
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/jquery-3.6.0.min.7c14a783.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/buttonToggle.41524be9.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/sectionMenu.2bb600e2.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/submitTaskVerifier.e6e3bd5f.js.download"></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/purify.min.549c43ec.js.download"></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/caret.2e5c0c9d.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/keydownWatchers.fdc4ec79.js.download" async=""></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/highlight.min.9b99da81.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/highlight.init.5870d8cf.js.download" async=""></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/preventsMultipleInteractions.19502e19.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/assessment.78d1fb98.js.download" async=""></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/news.4f082bd3.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/populateGrid.41971c83.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/makeHeaderPoints.ed06bad3.js.download" async=""></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/submitChatbotSearch.01a619f9.js.download" async=""></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/menuSettings.fb011b3b.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/aria.a82b16ad.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ProjectSubmit.a8947d3b.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/LinkSubmit.f6aa2060.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/classPage.dd568610.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/buttonDarkMode.fd8f514a.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/phrase.dfd04ee1.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/feedback.7962df4a.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ExtraContentProgressRequest.7f84629c.js.download"></script>
+
+
+	<!-- video specific -->
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/video.min.ea7aa2f3.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/silvermine-videojs-quality-selector.min.a5df5b2a.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/dash.all.min.831efc7a.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/videojs-dash.min.a5cb38de.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/transcriptionToggle.afde441e.js.download"></script>
+
+
+	
+		<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/TheaterMode.e8c1420f.js.download"></script>
+		<script>new TheaterModeToggler().registerTheaterModeComponentOnVideoJS();</script>
+	
+	
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/lastMomentManager.b79a88c8.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/VideoPlayer.c106a78d.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/scroll-top.acd0a474.js.download"></script>
+	<script>
+		new VideoPlayer().build();
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/partitura.ed5e8367.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/audioProgress.049144a0.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/audioPlayer.38483a63.js.download"></script>
+
+
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/VideoTranscription.35d43dac.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/MarkdownProcessing.4fa8352c.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/clipboard.min.af8ab365.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/Clipper.6bd8b36c.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/scroll-to-top.1d1e7575.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/shortcuts-action.eba8a7c6.js.download"></script>
+	<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ModalAndAlertHandler.81e9a5c4.js.download"></script>
+	
+	
+    
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/interactjs.afa74568.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/chatbotInteractAnimate.c4ec5622.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ChatbotUtils.2fe6b4f4.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ChatbotTask.26ef5a12.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ChatbotSuggestionByTextSelection.395c040d.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ChatbotFullscreenHandler.8009a743.js.download"></script>
+        <script>
+            const gnarusUserContentConfig = {
+                endpoint: 'https://www.gnarususercontent.com.br/images',
+                token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTY0NDM0MzQsImtleSI6IjdiMjcwMTliLWRlNDgtNGQyZi1iOTYyLTFkOWYyMzcyZjliNyJ9.ZBnDO5eAPNeO8zVrIZiYM0RiHiFkaQMkGR3jHKyltD0',
+                envieId: '1',
+                userId: '7693824',
+            };
+
+            new ChatbotTask({
+                codeAreaDefaultCopyMessage: "Copiar código",
+                codeAreaCopiedMessage: "Copiado!",
+                firstAssistantMessage: "Oi, eu sou Luri :) Estou aqui para te ajudar caso tenha alguma dúvida no conteúdo da aula.",
+                upvoteIconAltMessage: "Ícone do polegar para cima, indicando que a resposta te ajudou",
+                downvoteIconAltMessage: "Ícone do polegar para baixo, indicando que a resposta não te ajudou",
+                copyIconAltMessage: "Copiar texto da Luri para área de transferêcia",
+				upvoteIconTooltipMessage: "Resposta boa",
+				downvoteIconTooltipMessage: "Resposta ruim",
+				copyIconTooltipMessage: "Copiar",
+				downvoteLabelMessage: "",
+                wrongAnswerTitle: "Gostaria de revisar o conteúdo do exercício?",
+				suggestAnalogyTitle: "<p>Olá! 👋</p><p>Gostaria de uma analogia sobre a aula para facilitar o entendimento?</p>",
+                wrongAnswerButton: "Sim, me ajude a revisar",
+                wrongAnswerPrompt: "Luri, me explique o enunciado deste exercício",
+				suggestAnalogyButton: "Sim, me explique usando analogias",
+				suggestAnalogyPrompt: "Luri, me explique a aula usando analogias de maneira detalhada",
+                closeButton: "Fechar",
+                removeImageIconAltText: "Ícone de X azul em um círculo para remover a imagem"
+            }, gnarusUserContentConfig, "false", ).setupListeners();
+		</script>
+		<script>
+			new ChatbotSuggestionByTextSelection();
+			new ChatbotFullscreenHandler();
+		</script>
+    
+
+	
+
+	
+
+	
+
+	<script>
+		new VideoTranscription();
+		new MarkdownProcessing("https://cursos.alura.com.br").onLoad();
+		new Clipper("Copiar código", "Código copiado!", "Falha ao copiar o código!");
+		window.addEventListener('load', () => new BackToTopButton().init());
+		new ModalAndAlertHandler('logica-programacao-funcoes-listas').setupListeners();
+
+		const submitExamMessage = `Enviar avaliação`;
+	</script>
+
+
+
+
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/darkMode.d01066d5.js.download"></script>
+
+<script>new DarkModeToggler().refreshListener()</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/uploadImages.7c1a29db.css" rel="stylesheet">
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/UploadProgress.14749111.js.download"></script>
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/ImagesClient.b358c789.js.download"></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/marked.min.c69e14e8.js.download"></script>
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/enableForumButtons.1293253c.js.download"></script>
+
+<script>
+    var IMAGE_UPLOAD_MESSAGES = {
+        imageUploadMessageInit: `Anexe arquivos arrastando e soltando`,
+        imageUploadMessageDragEnter: `Solte a imagem para fazer o upload`,
+        imageUploadMessageDrop: `Enviando a imagem #images_names#`,
+        imageUploadMessageProgress: `Enviando a imagem #images_names#: #progress#%`,
+        imageUploadMessageUploaded: `Imagem enviada com sucesso!`,
+        imageUploadMessageSizeUnits: `MB`,
+        imageUploadMessageTag: `![Insira aqui a descrição dessa imagem para ajudar na acessibilidade](#url#) `
+    }
+</script>
+
+
+    
+        <link href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hackeditor.min.fcf421a7.css" rel="stylesheet">
+        <link href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hackeditor.custom.e0057fb6.css" rel="stylesheet">
+        <link href="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/github.754087c4.css" rel="stylesheet">
+
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hackeditor.min.fdc227ab.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/hackeditor.custom.83e90947.js.download"></script>
+        <script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/highlight.min.9b99da81.js.download"></script>
+        <script>
+            const setupEditorsOnPage = (e) => {
+                const toolbarActionsHints = {
+                    toggleHeadingActionHint: `Título`,
+                    toggleBoldActionHint: `Negrito`,
+                    toggleItalicActionHint: `Itálico`,
+                    toggleOrderedListActionHint: `Lista ordenada`,
+                    toggleUnorderedListActionHint: `Lista não ordenada`,
+                    togglePreviewActionHint: `Pré-visualizar`,
+                    drawTableActionHint: `Inserir Tabela`,
+                    drawCodeActionHint: `Inserir bloco de código`,
+                    drawLinkActionHint: `Inserir Link`,
+                    drawImageActionHint: `Inserir Imagem`,
+                    drawUploadedImageActionHint: `Upload de imagem`,
+                    undoActionHint: `Desfazer`,
+                    redoActionHint: `Refazer`
+                }
+
+                const imageUploadErrors = {
+                    imageErrorLimit: `Você só pode inserir 5 imagens por vez!`,
+                    imageFileNotAllowed: `O arquivo filename não é permitido, apenas imagens!`,
+                    imageVeryLarge: `O arquivo filename é maior que o limite de 2 MB.`,
+                    imageMaliciousFile: `O arquivo filename contém conteúdo malicioso.`
+                }
+
+                window.editors = window.editors || [];
+
+                const editorsElements = window.editors.map(ed => ed.element.id);
+
+                const textAreaEditors = Array.from(document.querySelectorAll('.hackeditor > textarea'));
+                textAreaEditors
+                    .filter(e => e.closest('.taskForms') == null)
+                    .filter(e => editorsElements.length == 0 ? true : !editorsElements.includes(e.id))
+                    .forEach(editorTextArea => {
+                        const editor = setupHackEditor({
+                            editorOptions: {
+                                element: editorTextArea,
+                                initialValue: editorTextArea.value || editorTextArea.innerText,
+                                syncPreview: true,
+                                maxHeight: "300px",
+                                toolbarActionsHints,
+                                imageUploadMessages: IMAGE_UPLOAD_MESSAGES,
+                                imageUploadErrors,
+                                imageUploadClient: new ImagesClient(
+                                    'https://www.gnarususercontent.com.br/images',
+                                    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTY0NDM0MzQsImtleSI6IjdiMjcwMTliLWRlNDgtNGQyZi1iOTYyLTFkOWYyMzcyZjliNyJ9.ZBnDO5eAPNeO8zVrIZiYM0RiHiFkaQMkGR3jHKyltD0',
+                                    1,
+                                    7693824
+                                ),
+                                allowImageUpload: editorTextArea.dataset.allowImageUpload
+                            },
+                            extensions: {
+                                DOMPurify,
+                                marked,
+                                hljs
+                            }
+                        });
+
+                        window.editors.push({
+                            instance: editor,
+                            element: editorTextArea,
+                        });
+
+                        enableForumButtons();
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', setupEditorsOnPage);
+            document.addEventListener('change', setupEditorsOnPage);
+            window.setupEditorsOnPage = setupEditorsOnPage;
+        </script>
+    
+    
+
+
+<script src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/IframeChecker.05103d26.js.download"></script>
+
+
+<iframe id="_hjSafeContext_3706739" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/saved_resource(1).html"></iframe><script type="text/javascript" id="" charset="">(function(a,b,c,d){a[c]=a[c]||[];a[c].push({eventType:"init",value:d,dc:"us"});a=b.getElementsByTagName("script")[0];b=b.createElement("script");b.async=!0;b.src="https://tags.creativecdn.com/OiIKV8DdRsC6DWlZuu25.js";a.parentNode.insertBefore(b,a)})(window,document,"rtbhEvents","OiIKV8DdRsC6DWlZuu25");</script><img src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/saved_resource" width="1" height="1" scrolling="no" frameborder="0" style="display:none"><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Lógica de programação_ explore funções e listas_ Aula 3 - Atividade 5 Reiniciando o Jogo _ Alura - Cursos online de tecnologia_files/saved_resource(2).html"></iframe></body></html>
